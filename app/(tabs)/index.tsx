@@ -7,6 +7,8 @@ import {
   StyleSheet,
   Alert,
   useColorScheme,
+  TouchableWithoutFeedback,
+  Keyboard,
 } from 'react-native';
 
 interface SubmittedData {
@@ -31,6 +33,7 @@ const LoginForm = () => {
   };
 
   return (
+    <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>
     <View style={[
       styles.container,
       { backgroundColor: isDarkMode ? '#1a1a1a' : '#ffffff' }
@@ -100,6 +103,7 @@ const LoginForm = () => {
         </View>
       )}
     </View>
+    </TouchableWithoutFeedback>
   );
 };
 
