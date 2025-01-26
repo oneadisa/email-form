@@ -1,16 +1,12 @@
 {
   "expo": {
-    "name": "starter-form",
-    "slug": "starter-form",
+    "name": "rise-mobile",
+    "slug": "rise-mobile",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/coinpay-icon.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/coinpay-splash.png",
-      "resizeMode": "cover"
-    },
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true
@@ -31,7 +27,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/coinpay-splash.png",
+          "image": "./assets/images/splash-icon.png",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
