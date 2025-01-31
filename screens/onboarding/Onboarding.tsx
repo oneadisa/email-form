@@ -5,13 +5,12 @@ import {
   Animated,
   FlatList,
   StyleSheet,
-  Text,
-  TouchableOpacity,
   View,
 } from "react-native";
 import { Paginator } from "@/components/Paginator";
 import OnboardingSlide from "./OnBoardingSlide";
 import { slides } from "./slides";
+import { Button } from "@/components/Button";
 
 export function Onboarding() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -63,18 +62,14 @@ export function Onboarding() {
             containerStyle={styles.paginator}
           />
         </View>
-        <TouchableOpacity onPress={scrollToNextSlide} style={styles.nextButton}>
-          <Text style={styles.nextButtonText}>
-            {currentSlide === slides.length - 1 ? "Next" : "Next"}
-          </Text>
-        </TouchableOpacity>
+        <Button currentSlide={currentSlide} scrollToNextSlide={scrollToNextSlide} />
       </View>
       <StatusBar style="auto" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: "white",
@@ -110,5 +105,6 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 16,
     fontWeight: "600",
+    fontFamily: 'Poppins-Regular',
   },
 });

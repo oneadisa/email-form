@@ -44,12 +44,12 @@ const styles = StyleSheet.create({
   },
   description: {
     width: 340,
-    fontSize: 38,
+    fontSize: 32,
     fontWeight: "600",
     textAlign: "center",
     color: "#33",
     lineHeight: 38,
-
+    fontFamily: 'Poppins-Regular',
     paddingTop: 20,
   },
 });
